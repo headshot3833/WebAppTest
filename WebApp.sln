@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.9.34723.18
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebApp.Api", "WebApp.Calculator\WebApp.Api.csproj", "{A71E5394-A894-4F0F-A108-CCD025876F7B}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WebApp.Api", "WebApp.Calculator\WebApp.Api.csproj", "{A71E5394-A894-4F0F-A108-CCD025876F7B}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Core", "Core", "{DA4FA5E3-EE14-4FFF-9345-7F92CE7A8709}"
 EndProject
@@ -11,9 +11,13 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Infrastructure", "Infrastru
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Presentation", "Presentation", "{899C9C7E-5C85-42C0-8943-840BA97546F9}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebApp.AplicationCalculator", "WebApp.Aplication\WebApp.AplicationCalculator.csproj", "{CE854139-8A0C-4AE0-BA66-EA40CF74243C}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WebApp.AplicationCalculator", "WebApp.Aplication\WebApp.AplicationCalculator.csproj", "{CE854139-8A0C-4AE0-BA66-EA40CF74243C}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebApp.ValueNumbers", "WebApp.Values\WebApp.ValueNumbers.csproj", "{A64C28B1-586C-407A-87DF-4FF8D9B7942B}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WebApp.ValueNumbers", "WebApp.Values\WebApp.ValueNumbers.csproj", "{A64C28B1-586C-407A-87DF-4FF8D9B7942B}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "NunitTests", "NunitTests", "{A40AF58B-A0F9-44F4-80DA-1AADF9B43179}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebApp.NunitTests", "WebApp.NunitTests\WebApp.NunitTests.csproj", "{7E916FDF-A193-4C78-A059-030086D43389}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -33,6 +37,10 @@ Global
 		{A64C28B1-586C-407A-87DF-4FF8D9B7942B}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{A64C28B1-586C-407A-87DF-4FF8D9B7942B}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{A64C28B1-586C-407A-87DF-4FF8D9B7942B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7E916FDF-A193-4C78-A059-030086D43389}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7E916FDF-A193-4C78-A059-030086D43389}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7E916FDF-A193-4C78-A059-030086D43389}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7E916FDF-A193-4C78-A059-030086D43389}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -41,6 +49,7 @@ Global
 		{A71E5394-A894-4F0F-A108-CCD025876F7B} = {899C9C7E-5C85-42C0-8943-840BA97546F9}
 		{CE854139-8A0C-4AE0-BA66-EA40CF74243C} = {DA4FA5E3-EE14-4FFF-9345-7F92CE7A8709}
 		{A64C28B1-586C-407A-87DF-4FF8D9B7942B} = {232A1C01-D19D-4268-A6D9-BCC524370FFE}
+		{7E916FDF-A193-4C78-A059-030086D43389} = {A40AF58B-A0F9-44F4-80DA-1AADF9B43179}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {E7FD1C2D-6FAE-4061-9E39-016D4F8AF980}
