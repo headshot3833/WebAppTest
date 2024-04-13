@@ -1,5 +1,6 @@
 
 using WebApp.Aplication.Services;
+using WebApp.AplicationCalculator.Services;
 
 namespace WebApp.Calculator
 {
@@ -13,6 +14,7 @@ namespace WebApp.Calculator
             builder.Services.AddSingleton<DivideService>();
             builder.Services.AddSingleton<MultiplicationService>();
             builder.Services.AddSingleton<MinusService>();
+            builder.Services.AddSingleton<ServiceCalculator>();
             builder.Services.AddControllers();
 
             builder.Services.AddEndpointsApiExplorer();

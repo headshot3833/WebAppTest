@@ -1,5 +1,6 @@
 using Microsoft.AspNetCore.Mvc;
 using WebApp.Aplication.Services;
+using WebApp.AplicationCalculator.Services;
 using WebApp.ValueNumbers;
 
 namespace WebApp.Calculator.Controllers
@@ -7,26 +8,22 @@ namespace WebApp.Calculator.Controllers
     [ApiController]
     public class ControllerCalculator : ControllerBase
     {
-        private readonly PlusService _plusService;
-        private readonly MinusService _minusService;
-        private readonly MultiplicationService _multiplicationService;
-        private readonly DivideService _divideService;
-        public ControllerCalculator(PlusService plusService, DivideService divideService, MultiplicationService multiplicationService, MinusService minusService)
+
+        private readonly ServiceCalculator _serviceCalculator;
+        public ControllerCalculator( ServiceCalculator serviceCalculator)
         {
-            _plusService = plusService;
-            _divideService = divideService;
-            _multiplicationService = multiplicationService;
-            _minusService = minusService;
+
+            _serviceCalculator = serviceCalculator;
         }
         [HttpPost("Plus")]
         public IActionResult Plus([FromBody] Numbers numbers)
         {
             try
             {
-                _plusService.A = numbers.A;
-                _plusService.B = numbers.B;
+                _serviceCalculator.A = numbers.A;
+                _serviceCalculator.B = numbers.B;
 
-                double result = _plusService.IntPlus();
+                double result = _serviceCalculator.IntPlus();
                 return Ok(result);
             }
             catch (Exception ex)
@@ -37,28 +34,28 @@ namespace WebApp.Calculator.Controllers
         [HttpPost("Multiplication")]
         public IActionResult Multi([FromBody] Numbers numbers)
         {
-            _multiplicationService.A = numbers.A;
-            _multiplicationService.B = numbers.B;
+            _serviceCalculator.A = numbers.A;
+            _serviceCalculator.B = numbers.B;
 
-            double result = _multiplicationService.MultiplicationInt();
+            double result = _serviceCalculator.MultiplicationInt();
             return Ok(result);
         }
         [HttpPost("divide")]
         public IActionResult Divide([FromBody] Numbers numbers)
         {
-            _divideService.A = numbers.A;
-            _divideService.B = numbers.B;
+            _serviceCalculator.A = numbers.A;
+            _serviceCalculator.B = numbers.B;
 
-            double result = _divideService.Divide();
+            double result = _serviceCalculator.Divide();
             return Ok(result);
         }
         [HttpPost("Minus")]
         public IActionResult Minus([FromBody] Numbers numbers)
         {
-            _minusService.A = numbers.A;
-            _minusService.B = numbers.B;
+            _serviceCalculator.A = numbers.A;
+            _serviceCalculator.B = numbers.B;
 
-            double result = _minusService.Minus();
+            double result = _serviceCalculator.Minus();
             return Ok(result);
         }
 
