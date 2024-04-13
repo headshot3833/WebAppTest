@@ -8,7 +8,7 @@ namespace WebApp.Aplication.Services;
 
 public class PlusService : DivideService
 {
-    public int IntPlus()
+    public double IntPlus()
     {
         return A + B;
     }

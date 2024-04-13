@@ -8,7 +8,7 @@ namespace WebApp.ValueNumbers;
 
 public class Numbers
 {
-    public int A {  get; set; }
+    public double A {  get; set; }
 
-    public int B { get; set; }
+    public double B { get; set; }
 }

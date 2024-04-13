@@ -9,7 +9,7 @@ namespace WebApp.Aplication.Services;
 
 public class DivideService : Numbers
 {
-    public int Divide()
+    public double Divide()
     {
         if (B != 0)
         {

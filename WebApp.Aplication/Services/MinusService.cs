@@ -8,7 +8,7 @@ using WebApp.ValueNumbers;
 namespace WebApp.Aplication.Services;
 public class MinusService : Numbers
 {
-    public int Minus()
+    public double Minus()
     {
         return A - B;
     }

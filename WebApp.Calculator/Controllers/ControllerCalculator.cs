@@ -26,7 +26,7 @@ namespace WebApp.Calculator.Controllers
                 _plusService.A = numbers.A;
                 _plusService.B = numbers.B;
 
-                int result = _plusService.IntPlus();
+                double result = _plusService.IntPlus();
                 return Ok(result);
             }
             catch (Exception ex)
@@ -40,7 +40,7 @@ namespace WebApp.Calculator.Controllers
             _multiplicationService.A = numbers.A;
             _multiplicationService.B = numbers.B;
 
-            int result = _multiplicationService.MultiplicationInt();
+            double result = _multiplicationService.MultiplicationInt();
             return Ok(result);
         }
         [HttpPost("divide")]
